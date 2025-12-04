@@ -658,7 +658,7 @@ h4 {
 }
 
 .bento-card--wide {
-    grid-column: span 3;
+    grid-column: span 2;
 }
 
 .bento-card__icon {
