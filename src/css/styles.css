@@ -1271,3 +1271,80 @@ h4 {
         right: 0;
     }
 }
+/* --- Legal Pages Styling --- */
+.legal-page {
+    padding-top: 140px;
+    /* Отступ под фиксированный хедер */
+    padding-bottom: 80px;
+    min-height: 80vh;
+}
+
+.legal-content {
+    max-width: 800px;
+    margin-top: 40px;
+}
+
+.legal-content h2 {
+    font-size: 1.5rem;
+    color: var(--color-white);
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border-left: 3px solid var(--color-accent);
+    padding-left: 15px;
+}
+
+.legal-content p {
+    color: var(--color-text-muted);
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+.legal-content strong {
+    color: var(--color-text);
+    font-weight: 600;
+}
+
+.legal-content ul {
+    list-style: none;
+    margin-bottom: 1.5rem;
+    padding-left: 10px;
+}
+
+.legal-content li {
+    color: var(--color-text-muted);
+    margin-bottom: 12px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.legal-content li::before {
+    content: '•';
+    color: var(--color-accent);
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+.link-highlight {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.link-highlight:hover {
+    color: var(--color-accent);
+    text-decoration: underline;
+}
+
+/* Адаптив для юридических страниц */
+@media (max-width: 768px) {
+    .legal-page {
+        padding-top: 120px;
+    }
+
+    .legal-content h2 {
+        font-size: 1.3rem;
+    }
+}
