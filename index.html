@@ -1,56 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/test-two/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    <script type="module" crossorigin src="/test-two/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/test-two/assets/styles-guStct1H.css">
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vox Elix — Карьерный апгрейд и стратегии роста</title>
+
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700&display=swap"
+    rel="stylesheet">
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+    <script type="module" crossorigin src="/vox-elix/index.js"></script>
+    <link rel="stylesheet" crossorigin href="/vox-elix/assets/styles-DnyjgNSB.css">
   </head>
   <body>
-    <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
+    <header class="header" id="header">
+  <div class="container header__container">
+    <a href="#" class="header__logo">
+      Vox <span class="header__logo-accent">Elix</span>
+    </a>
+
+    <nav class="header__nav">
+      <ul class="header__menu">
+        <li class="header__item"><a href="#" class="header__link">Главная</a></li>
+        <li class="header__item"><a href="#methodology" class="header__link">Методология</a></li>
+        <li class="header__item"><a href="#innovation" class="header__link">Инновации</a></li>
+        <li class="header__item"><a href="#blog" class="header__link">Блог</a></li>
+        <li class="header__item"><a href="#programs" class="header__link">Программы</a></li>
+        <li class="header__item"><a href="#about" class="header__link">О нас</a></li>
       </ul>
     </nav>
+
+    <div class="header__actions">
+      <a href="#contact" class="btn btn--small header__btn">Связаться</a>
+      <button class="header__burger" aria-label="Меню">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
   </div>
 </header>
 
-
-    <main>
+    <main class="main" id="main-content">
       <!-- Loads the specified .html file -->
       
     </main>
 
     <footer class="footer">
   <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
+    <div class="footer__grid">
+      <div class="footer__col">
+        <a href="#" class="footer__logo">Vox Elix</a>
+        <p class="footer__desc">
+          Решения, которые меняют правила игры. Ваша карьера — это проект, заслуживающий инновационного подхода.
+        </p>
+        <div class="footer__socials">
+          <a href="#" class="footer__social"><i data-lucide="linkedin"></i></a>
+          <a href="#" class="footer__social"><i data-lucide="twitter"></i></a>
+          <a href="#" class="footer__social"><i data-lucide="instagram"></i></a>
+        </div>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__title">Навигация</h3>
+        <ul class="footer__links">
+          <li><a href="#methodology">Методология</a></li>
+          <li><a href="#innovation">Инновации</a></li>
+          <li><a href="#blog">Блог</a></li>
+          <li><a href="#programs">Программы</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__title">Правовая информация</h3>
+        <ul class="footer__links">
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="cookies.html">Cookie Policy</a></li>
+          <li><a href="terms.html">Terms of Use</a></li>
+          <li><a href="return.html">Return Policy</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+          <li><a href="personal-data-policy.html">Personal Data Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__title">Контакты</h3>
+        <ul class="footer__contact-list">
+          <li>
+            <i data-lucide="map-pin"></i>
+            <span>Friedrichstraße 123, 10117 Berlin, Germany</span>
+          </li>
+          <li>
+            <i data-lucide="phone"></i>
+            <a href="tel:+493025550199">+49 30 25550199</a>
+          </li>
+          <li>
+            <i data-lucide="mail"></i>
+            <a href="mailto:support@vox-elix.online">support@vox-elix.online</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>&copy; 2025 Vox Elix. Платформа уже доступна в Европе. Все права защищены.</p>
+    </div>
   </div>
 </footer>
-
-
+<script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
   </body>
 </html>
